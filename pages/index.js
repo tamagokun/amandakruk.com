@@ -1,8 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
+import FacebookIcon from 'react-icons/lib/fa/facebook-official'
 
 export default () => <div>
   <Head>
+    <title>Amanda Kruk</title>
     <style>{`
       html {
         height: 100%;
@@ -37,13 +39,22 @@ export default () => <div>
       a:hover {
         color: #d6d6d6;
       }
+
+      a.icon {
+        border: 0;
+      }
     `}</style>
   </Head>
   <main>
     <h1>Amanda Kruk</h1>
-    <p>Classically trained Mezzo-Soprano for Wedding Ceremonies, Baptisms, Anniversaries and Events.</p>
+    <p>Classically trained Mezzo-Soprano</p>
     <p>
       <a href='mailto:info@amandakruk.com'>info@amandakruk.com</a>
+    </p>
+    <p>
+      <a href='https://www.facebook.com/amandakrukmezzo/' target='_blank' className='icon'>
+        <FacebookIcon />
+      </a>
     </p>
   </main>
 </div>
